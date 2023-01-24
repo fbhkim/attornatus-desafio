@@ -1,0 +1,7 @@
+insert into "tb_endereco" (lougadouro, cep, numero, cidade) values
+ ("rua do limao 232",
+       "01126-020",
+       "11963809259",
+       "Sao Paulo"
+
+    )

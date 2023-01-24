@@ -1,0 +1,8 @@
+insert into endereco values(lougadouro, cep, numero, cidade){
+ ("rua do limao 232",
+       "01126-020",
+       "11963809259",
+       "Sao Paulo"
+
+    )
+}

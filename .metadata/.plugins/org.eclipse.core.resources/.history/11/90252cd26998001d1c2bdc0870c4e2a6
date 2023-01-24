@@ -1,0 +1,9 @@
+package com.api.clients.entities;
+
+public class Pessoa {
+	
+	private Long id;
+	private String name;
+	private String data_nac;
+
+}

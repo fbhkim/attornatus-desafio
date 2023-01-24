@@ -1,0 +1,6 @@
+1.Durante a implementação de uma nova funcionalidade de software solicitada, quais critérios você avalia e implementa para garantia de qualidade de software?
+RESP: Os critérios que eu avalio e implementa para garantia de qualidade de software seria qualidade, qualidade e requisitos, definição de conformidade, metodologia de observção dos resultados
+s, conciliar os interesses dos diversos stalkholders e requisitos de software.
+
+2.Em qual etapa da implementação você considera a qualidade de software?
+RESP: Em levatamento de analise de requisitos

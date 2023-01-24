@@ -1,0 +1,44 @@
+package com.api.clients.controllers;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.api.clients.entities.Endereco;
+import com.api.clients.entities.Pessoa;
+import com.api.clients.repositories.PesssoaRepository;
+
+@RestController
+@RequestMapping(value = "/pessoa" )
+public class PessoaController {
+	
+	@Autowired
+	private PesssoaRepository repository;
+	
+	@GetMapping
+	public List<Pessoa> findAll(){
+		List<Pessoa> result = repository.findAll();
+		return result;
+		
+	}
+	
+	@PostMapping("endereco")
+	public Endereco createEndereco(@RequestBody Endereco endereco){
+		Endereco result = repository.save(endereco);
+		return result;
+		
+	}
+	
+	@PostMapping
+	public Pessoa createPeople(@RequestBody Pessoa pessoa){
+		Pessoa result = repository.save(pessoa);
+		return result;
+		
+	}
+
+}
